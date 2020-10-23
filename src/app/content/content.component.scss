@@ -1,0 +1,36 @@
+.container {
+  column-count: 2;
+  margin: 0 auto;
+  width: 90%;
+  div {
+    margin: 10px;
+  }
+  img {
+    border-radius: 20px;
+    max-width: 100%;
+  }
+}
+
+.copy {
+  bottom: 0;
+  position: absolute;
+  left: 0;
+}
+
+@media (min-width: 700px) {
+  .container {
+    column-count: 3;
+  }
+}
+
+@media (min-width: 1020px) {
+  .container {
+    column-count: 4;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    column-count: 6;
+  }
+}

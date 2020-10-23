@@ -1,0 +1,53 @@
+.header {
+  color: gray;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  height: 60px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  &__brand {
+    width: 20px;
+  }
+  select {
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    height: 30px;
+    padding: 5px;
+  }
+  &__profile {
+    padding: 2px;
+  }
+  input {
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 10%;
+  }
+  &__profile:hover {
+    background-color: #cdcdcd;
+    border-radius: 50%;
+    border: 2px solid #81d8d0;
+  }
+}
+
+@media (min-width: 600px) {
+  .header {
+    font-size: 20px;
+    input {
+      padding: 10px 15px;
+      width: 50%;
+      select {
+        padding: 10px 15px;
+        width: 60%;
+      }
+    }
+  }
+}
+@media (min-width: 900px) {
+  .header__brand {
+    width: 40px;
+  }
+}
